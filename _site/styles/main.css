@@ -1,0 +1,269 @@
+/*JetBrains Mono*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+:root{
+  
+    --background-color: rgba(22, 22, 22, 0.7);
+    --body-color: rgb(30 30 30);
+    --theme-color:rgb(125 91 237);
+}
+body{
+    margin: 0;
+    background-color: var(--body-color);
+    font-family: 'JetBrains Mono', monospace;
+}
+.app-header{
+    background-color: var(--background-color);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    overflow: visible;
+}
+.container{
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 8rem;
+    text-decoration: none;
+}
+
+.nav-logo-text{
+    margin-left: 1rem;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.beta{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+.support{
+    margin-right: 3rem;
+    margin-left: 3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.projects{
+    margin-right: 3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.github{
+    text-decoration: none;
+    margin-right: 5rem;
+    color: white;
+}
+.beta:hover{
+    color: var(--theme-color);
+}
+.support:hover{
+    color: var(--theme-color);
+}
+.github:hover{
+    color: var(--theme-color);
+}
+.hero-section{
+    max-width: 960px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding-top: auto;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.beta-access{
+    background-color:var(--theme-color) ;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.information{
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+}
+.information h1{
+    font-size: 50px;
+}
+.information h3{
+    font-weight: 100;
+}
+
+.soon{
+    background-color: var(--theme-color);
+    text-decoration: none;
+    color: white;
+    margin-top: 4rem;
+    padding: 20px;
+    border-radius: 30px;
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 3vh;
+    margin-bottom: 3rem;
+}
+.news-letter{
+    max-width: 960px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    color: white;
+    text-align: center;
+}
+
+.email-input{
+    outline-width: 1px;
+    border-radius: 10px;
+    background:none;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    border-color: var(--theme-color);
+}
+.nav-menu-icon{
+    display: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 2rem;
+}
+.bar{
+    display: block;
+    width: 20px;
+    height: 1px;
+    margin: 4px auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+}
+.email-input:focus{
+    outline-style: solid;
+    outline-color: var(--theme-color);
+}
+.news-submit{
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 10px;
+    color: white;
+    margin-left: 2rem;
+    background-color: var(--theme-color);
+    border-radius: 20px;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+}
+
+
+
+.news-letter p{
+    margin-top: -.5rem;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 1097px){
+   
+    
+    .container{
+        min-width: 10px;
+        width: 100%;
+    }
+    .nav-links{
+        position: fixed;
+        height: 35vh;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 3rem;
+        justify-content: center;
+        border-radius: 0 0 20px 20px;
+        opacity: 100%;
+        align-items: center;
+        z-index: -1;
+        top: -1000%;
+        filter: blur(0);
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-links.active {
+        top: 0;
+    }
+    .nav-links a{
+        margin-bottom: 2rem;
+    }
+    .projects{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .github{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-letter{
+        margin-top: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+    .nav-menu-icon{
+        display: block;
+    }
+    .hero-section{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 100vh;
+        text-align: center;
+    }
+    .email-input{
+        width: auto;
+    }
+    .footer-section{
+        margin-top: 15rem;
+    }
+
+    .nav-menu-icon.active .bar:nth-child(1){
+        transform: translateY(2.5px) rotate(45deg);
+    }
+    .nav-menu-icon.active .bar:nth-child(2){
+        transform: translateY(-2.5px) rotate(-45deg);
+    }
+
+
+}
